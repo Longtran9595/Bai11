@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập vòng lặp 02</title>
+</head>
+<body>
+<script>
+<!--    Bài 1-->
+// let a = 0;
+// let b = 1;
+// let n;
+// for (let i = 0; i < 100; i++) {
+//     n = a+b;
+//     a=b;
+//     b=n;
+//     document.write(a + '<br>');
+// }
+
+// bài 2
+// let b = +prompt('nhập b'); let s = 1;
+// for (let i = 1; i <= b ; i++) {
+//     s *= i;
+// }
+// document.write('giai thừa của ' + b + " là " + s );
+
+// bài 3
+// let str = "*";
+// // hình 1
+// for (let i = 1; i < 6 ; i++) {
+//     for (let j = 1; j <= i; j++) {
+//         document.write("*")
+//     }
+//     document.write('<br>');
+// }
+//
+// // hình 2
+// for (let a = 6; a > 1 ; a--) {
+//     for (let b = 1; b < 6 ; b++) {
+//         if (b!=a) {
+//             document.write(str);
+//         } else {break;}}
+//     document.write('<br>');
+// }
+// document.write('<br>');
+
+// hình 3
+for (let i = 1; i <= 5; i++) { // i = 2
+    let dong = "";
+    for (let j = 1; j <= (5 - i); j++) { // j <= 3
+        dong += " "
+    }
+    for (let j = 1; j <= i; j++) { // j <= 2
+        dong += "*";
+    }
+    console.log(dong);
+}
+
+
+
+// bài 5
+// let tiengui = +prompt('Nhập số tiền gửi');
+// let thang = +prompt('Số tháng gửi');
+// let laisuat = +prompt('lãi suâất hàng tháng');
+// let tiennhan;
+// let a = (1+laisuat/100);
+// let b = tiengui;
+// for (let i = 1; i <= thang ; i++) {
+//     tiennhan = tiengui * a;
+//     tiengui = tiennhan;}
+// document.write('tiền lãi: ' + tiennhan - b );
+</script>
+</body>
+</html>
